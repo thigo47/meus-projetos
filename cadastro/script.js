@@ -4,28 +4,25 @@ let i = {
     res: document.getElementById("resp"),
 }
    let cadastrado = []
-  function cadastro(params) {
+  
+   function cadastro() {
     if (i.email.value.length == 0 || i.email.value.length == 0) {
-        window.alert("Adicione valores antes de cadastrar")
-    } else {
-       
-      cadastrado.push(i.email.value , i.senha.value)
-        
-        let link = document.createElement("a")
-        link.href = "../Login/index.html"
-        link.id = "outrapag"
+      window.alert("Adicione valores antes de cadastrar")
+  } else {
 
-        sessao.appendChild(link)
+    window.alert("tudo ok")
+    cadastrado.push(i.email.value , i.senha.value)
+      
+      let link = document.createElement("a")
+      link.href = "../Login/index.html"
+      link.id = "outrapag"
 
-        let novobotao = document.createElement("button")
-        novobotao.id = "login"
-        novobotao.innerHTML = "login"
-        outrapag.appendChild(novobotao)
+      sessao.appendChild(link)
 
-        
-    }
-    
-
-}
-export{ cadastro, cadastrado}
-/* */
+      let novobotao = document.createElement("button")
+      novobotao.id = "login"
+      novobotao.innerHTML = "login"
+      outrapag.appendChild(novobotao)
+  
+  }
+ }
