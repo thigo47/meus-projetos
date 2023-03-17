@@ -24,4 +24,4 @@ function login() {
         }
     }
 }
-// terminar o resto das interaçoes
+// terminar o resto das interaçoes // colocar botao de "nao é cadastrado? entre outros"
