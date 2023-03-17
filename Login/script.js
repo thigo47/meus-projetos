@@ -1,7 +1,8 @@
 let Login = document.querySelector("#logine")
-let senha = document.querySelector("senhae")
+let senha = document.querySelector("#senhae")
 
 let emailesenhac = []
+let emailesenhal = []
 
 emailesenhac.push(localStorage.getItem("Email"),
 localStorage.getItem("Senha"))
@@ -9,16 +10,18 @@ localStorage.getItem("Senha"))
 //document.body.innerHTML += emailesenhac
 
 
-function login(params) {
-    if (Login.value.length ==  0  || Login.value.length == 0) {
+function login() {
+    if (Login.value ==  0  || senha.value == 0) {
         window.alert("adicione suas Login e Senha Cadastrados anteriormente primeiro")
     } else {
-        if (Login !== emailesenhac[0] && senha !== emailesenhac[1]) {
+
+        emailesenhal.push(Login.value , senha.value)
+
+        if (emailesenhal[0] !== emailesenhac[0] && emailesenhal[1] !== emailesenhac[1]) {
             window.alert("Email ou senha incorretos , tente novamente")
         } else {
             window.alert("ola")
         }
     }
 }
-//vhjk
-//vghjbk
+// terminar o resto das interaçoes

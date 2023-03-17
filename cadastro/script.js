@@ -24,5 +24,7 @@ let i = {
       novobotao.innerHTML = "login"
       outrapag.appendChild(novobotao)
   
+      localStorage.setItem("Email",i.email.value)
+      localStorage.setItem("Senha",i.senha.value)
   }
  }
