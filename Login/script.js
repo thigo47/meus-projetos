@@ -1,5 +1,6 @@
 let Login = document.querySelector("#logine")
 let senha = document.querySelector("#senhae")
+let aviso = document.getElementById("aviso")
 
 let emailesenhac = []
 let emailesenhal = []
@@ -13,12 +14,17 @@ localStorage.getItem("Senha"))
 function login() {
     if (Login.value ==  0  || senha.value == 0) {
         window.alert("adicione suas Login e Senha Cadastrados anteriormente primeiro")
+
+        aviso.innerHTML = "Nao esta cadstrado ainda? clique aqui"
     } else {
 
         emailesenhal.push(Login.value , senha.value)
 
         if (emailesenhal[0] !== emailesenhac[0] && emailesenhal[1] !== emailesenhac[1]) {
             window.alert("Email ou senha incorretos , tente novamente")
+
+            aviso.innerHTML = "Nao esta cadstrado ainda? clique aqui"
+
         } else {
             window.alert("ola")
         }
