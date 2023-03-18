@@ -8,17 +8,24 @@ body{
     background-image: linear-gradient( to left ,#00a6fb , #0582ca , #006494);
 }
 section{
-    box-shadow: 20px , 20px ,10px black;
     text-align: center;
     margin: auto;
     border-radius: 10px;
     width: 400px;
     background-image: linear-gradient(#003554 , #0582ca);
     color: white;
+    box-shadow: 10px 10px 10px #0035547b;
+}
+#aviso{
+    background-color: #00355409;
+    border-radius: 100px;
+    color: white;
+
 }
 
 button{
     background-color: #051923;
     border-radius: 5px;
     color: aliceblue;
+
 }

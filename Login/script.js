@@ -23,7 +23,7 @@ function login() {
         if (emailesenhal[0] !== emailesenhac[0] && emailesenhal[1] !== emailesenhac[1]) {
             window.alert("Email ou senha incorretos , tente novamente")
 
-            aviso.innerHTML = "Nao esta cadstrado ainda? clique aqui"
+            aviso.innerHTML = "Nao esta cadastrado ainda? clique aqui"
 
         } else {
             window.alert("ola")
