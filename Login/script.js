@@ -1,6 +1,7 @@
 let Login = document.querySelector("#logine")
 let senha = document.querySelector("#senhae")
 let aviso = document.getElementById("aviso")
+let blogin = document.getElementById("blogin")
 
 let emailesenhac = []
 let emailesenhal = []
@@ -27,6 +28,8 @@ function login() {
 
         } else {
             window.alert("ola")
+
+     window.location.replace("../hora e data/index.html")
         }
     }
 }
