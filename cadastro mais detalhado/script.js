@@ -5,7 +5,7 @@ let ip = {
     tel : document.getElementById("tel"),
     nasc : document.getElementById("nasc"),
 }
-
+let allinfo = []
 let ic = {
     email:document.getElementById("email"),
     senha: document.getElementById("senha"),
@@ -19,9 +19,13 @@ function cadastro() {
     }else if (ic.senha.value != ic.senhac.value){
         window.alert("a senha precia ser igual")
     }else{
+        ///////////////////
+        let ipstring = JSON.stringify(ip);
+        allinfo.push(ipstring)
+        //////////////////
         let sucesso = document.getElementById("sucesso")
         let h2 = document.createElement("h2")
-        h2.innerHTML= `Olá ${ip.nome.value} ${ip.sobrenome.value} , voce foi cadastrado com sucesso`
+        h2.innerHTML= `Olá ${ip.nome.value} ${ip.sobrenome.value} , voce foi cadastrado com sucesso ${allinfo}`
 
         sucesso.appendChild(h2)
         //
@@ -32,5 +36,9 @@ function cadastro() {
 
         sucesso.appendChild(link)
 
+        //localStorage.setItem()
+
+
+        // é preciso continuar a inserçao dos valores em string para armazenar e usar na pagina login
     }
 }

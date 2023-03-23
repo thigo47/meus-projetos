@@ -16,20 +16,32 @@
     <h2>informaçoes pessoais</h2>
     
         <section id="ipessoais">
-            <p>Nome: <input type="text" name="nome" id="nome"></p>
-            <p id="sobrenome">Sobrenome: <input type="text" name="sobrenome" id="sobrenome"></p>
-            <p>nacionalidade : <input type="text" name="nacio" id="nacio"></p>
-            <p>telefone : <input type="tel" name="tel" id="tel"></p>
-            <p>data de nascimento <input type="date" name="nasc" id="nasc"></p>
-        </section>
-    
-        <section id="cadastro">
-            <p>Email para cadastro<input type="email" name="email" id="email"></p>
-            <p>senha para cadastro: <input type="password" name="senha" id="senha"></p>
-            <p>confirme a senha: <input type="password" name="confirmaçaosenha" id="confirmaçaosenha"></p>
-        </section>
+            <div coluna="coluna">
+                <label>Nome:</label>
+                <input type="text" name="nome" id="nome"><br>
+                
+                <label  class="f1">Sobrenome:</label>
+                <input type="text" name="sobrenome" id="sobrenome"> <br>
+                <label  class="f102">nacionalidade :</label>
+                <input type="text" name="nacio" id="nacio"> <br>
+                <label class=labelf102">telefone :</label>
+                <input type="tel" name="tel" id="tel"> <br>
+            </div>
 
-        <section><button onclick="cadastro()">cadastrar</button></section>
+            <div class="coluna">
+                <label id="f103">data de nascimento</label>
+                <input type="date" name="nasc" id="nasc"> <br><br>
+                <label>Email para cadastro</label>
+                <input type="email" name="email" id="email"><br>
+                <label>senha para cadastro:</label>
+                <input type="password" name="senha" id="senha"><br>
+                
+                <label>confirme a senha:</label>
+                <input type="password" name="confirmaçaosenha" id="confirmaçaosenha"><br>
+            </div>
+
+            <button onclick="cadastro()">cadastrar</button>
+        </section>
     <section id="sucesso">
     </section>
 </main>

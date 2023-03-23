@@ -1,35 +1,56 @@
+*{
+    color: white;
+}
 header{
     text-align: center;
-    background-color: aliceblue;
 }
 h1{
     margin: 0;
     margin: auto;
 }
+body{
+   background-image: linear-gradient( to bottom, #053C5E , #1D3958 , #353652 , #4C334D , #64303c );
+   height: 675px;
+   
+}
 main{
-    background-color: gray;
+    background-image: linear-gradient( to bottom ,#053c5ea9 , #64303c0d );
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   
+
 }
 section{
-    background-color: aliceblue;
+    background-image: linear-gradient(to bottom , #0000003b , #db222b44);
+    width: 600px;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 5px 5px 35px #01090e56;
 }
-#nome{
-    border-radius: 10px;
-    border: white;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.187);
-    width: 100px;
+
+
+
+input:hover{
+    background-color: rgba(61, 61, 61, 0.007);
+
 }
 input{
     border-radius: 10px;
     border: white;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.187);
     width: 100px;
-    margin: 0 10px;
+    margin-bottom: 5px;
 }
-#nome:hover{
-    background-color: rgba(61, 61, 61, 0.007);
 
+label{
+    
+    display: inline-block;
+    width: 150px;
+}
+
+
+button{
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    background-color: #053c5e69;
+    border-color: #64303c;
 }
